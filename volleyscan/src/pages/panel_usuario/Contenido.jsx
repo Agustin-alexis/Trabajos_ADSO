@@ -7,7 +7,7 @@ import {
   FaXmark,
 } from "react-icons/fa6";
 
-import '../styles/contenido.css'
+import '../../styles/contenido.css'
 
 const videosData = [
   {

@@ -6,7 +6,7 @@ import {
   FaListCheck
 } from "react-icons/fa6";
 
-import '../styles/rutinas.css'
+import '../../styles/rutinas.css'
 
 const Rutinas = () => {
 

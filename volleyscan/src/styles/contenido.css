@@ -71,10 +71,6 @@ img {
   max-width: 100%
 }
 
-.app-wrapper {
-  display: flex;
-  min-height: 100vh
-}
 
 /* ── SIDEBAR ── */
 .sidebar {

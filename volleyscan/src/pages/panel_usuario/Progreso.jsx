@@ -1,4 +1,4 @@
-import "../styles/progreso.css";
+import "../../styles/progreso.css";
 import { useEffect, useRef, useState } from "react";
 import {
   FaHouse,

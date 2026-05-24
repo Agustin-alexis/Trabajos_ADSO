@@ -92,15 +92,12 @@ img {
   border: 0
 }
 
-.app-wrapper {
-  display: flex;
-  min-height: 100vh
-}
 
 
 /* ── MAIN ── */
 .main-content {
   flex: 1;
+  width: 100%;
   padding: 32px 36px;
   display: flex;
   flex-direction: column;

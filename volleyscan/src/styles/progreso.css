@@ -48,8 +48,7 @@ ul, ol { list-style: none; }
 a  { text-decoration: none; color: inherit; }
 button { border: none; background: none; cursor: pointer; font-family: inherit; }
 
-/* ── Layout ── */
-.app-wrapper { display: flex; min-height: 100vh; }
+
 
 /* =============================================
    SIDEBAR

@@ -7,7 +7,7 @@ import {
   FaPlay
 } from "react-icons/fa6";
 
-import '../styles/historial.css'
+import '../../styles/historial.css'
 
 const Historial = () => {
 

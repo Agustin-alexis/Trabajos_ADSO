@@ -36,9 +36,9 @@ function Sidebar() {
         <div className="sb-group-label">Principal</div>
 
         <Link
-          to="/"
+          to="/usuario"
           className={`nav-item ${
-            location.pathname === "/" ? "active" : ""
+            location.pathname === "/dashboard" ? "active" : ""
           }`}
         >
           <FaHouse />
@@ -46,7 +46,7 @@ function Sidebar() {
         </Link>
 
         <Link
-          to="/perfil"
+          to="/usuario/perfil"
           className={`nav-item ${
             location.pathname === "/perfil"
               ? "active"
@@ -62,7 +62,7 @@ function Sidebar() {
         </div>
 
         <Link
-          to="/rutinas"
+          to="/usuario/rutinas"
           className={`nav-item ${
             location.pathname === "/rutinas"
               ? "active"
@@ -74,7 +74,7 @@ function Sidebar() {
         </Link>
 
         <Link
-          to="/historial"
+          to="/usuario/historial"
           className={`nav-item ${
             location.pathname === "/historial"
               ? "active"
@@ -86,7 +86,7 @@ function Sidebar() {
         </Link>
 
         <Link
-          to="/contenido"
+          to="/usuario/contenido"
           className={`nav-item ${
             location.pathname === "/contenido"
               ? "active"
@@ -102,7 +102,7 @@ function Sidebar() {
         </div>
 
         <Link
-          to="/progreso"
+          to="/usuario/progreso"
           className={`nav-item ${
             location.pathname === "/progreso"
               ? "active"
@@ -114,7 +114,7 @@ function Sidebar() {
         </Link>
 
         <Link
-          to="/analisis"
+          to="/usuario/analisis"
           className={`nav-item ${
             location.pathname === "/analisis"
               ? "active"
@@ -126,7 +126,7 @@ function Sidebar() {
         </Link>
 
         <Link
-          to="/notificaciones"
+          to="/usuario/notificaciones"
           className={`nav-item ${
             location.pathname === "/notificaciones"
               ? "active"
@@ -142,7 +142,7 @@ function Sidebar() {
         </div>
 
         <Link
-          to="/configuracion"
+          to="/usuario/configuracion"
           className={`nav-item ${
             location.pathname === "/configuracion"
               ? "active"

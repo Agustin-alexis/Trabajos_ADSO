@@ -17,7 +17,7 @@ import {
   FaCircleCheck,
 } from "react-icons/fa6";
 
-import "../styles/analisis.css";
+import "../../styles/analisis.css";
 
 export default function Analisis() {
   return (

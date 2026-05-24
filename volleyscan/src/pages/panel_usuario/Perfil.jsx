@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-import Sidebar from "../components/Sidebar/Sidebar";
-import ProfileHeader from "../components/Profile/ProfileHeader";
-import ProfileSidebar from "../components/Profile/ProfileSidebar";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import ProfileHeader from "../../components/Profile/ProfileHeader";
+import ProfileSidebar from "../../components/Profile/ProfileSidebar";
 
-import PersonalInfo from "../components/Profile/PersonalInfo";
-import Objetivos from "../components/Profile/Objetivos";
-import Preferencias from "../components/Profile/Preferencias";
-import Seguridad from "../components/Profile/Seguridad";
-import DeleteModal from "../components/Profile/DeleteModal";
+import PersonalInfo from "../../components/Profile/PersonalInfo";
+import Objetivos from "../../components/Profile/Objetivos";
+import Preferencias from "../../components/Profile/Preferencias";
+import Seguridad from "../../components/Profile/Seguridad";
+import DeleteModal from "../../components/Profile/DeleteModal";
 
-import "../styles/perfil.css";
+import "../../styles/perfil.css";
 
 const Perfil = () => {
   const [activeSection, setActiveSection] = useState("personal");
