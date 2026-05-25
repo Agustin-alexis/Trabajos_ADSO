@@ -9,7 +9,9 @@ import Progreso from './pages/panel_usuario/Progreso'
 import Analisis from './pages/panel_usuario/Analisis'
 import Notificaciones from './pages/panel_usuario/Notificaciones'
 import Configuracion from './pages/panel_usuario/Configuración'
+import Home from './pages/Home'
 import Login from './pages/login/Login'
+import Recuperacion from './assets/Auth/Recuperacion/Recuperacion'
 
 
 
@@ -20,8 +22,11 @@ export default function App() {
         
         <Routes>
           {/* Página de inicio → Login */}
-          <Route path="/"         element={<Login />} />
+          <Route path="/"         element={<Home />} />
           <Route path="/login"         element={<Login />} />
+          <Route path="/login"         element={<Login />} />
+          <Route path="/recuperacion"         element={<Recuperacion />} />
+
           
 
           {/* Panel usuario (con sidebar) */}

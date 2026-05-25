@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../../styles/inicio_sesion.css'
+import Google from '../../assets/img/google.png'
+import Facebook from '../../assets/img/facebook.png'
 
 // Usuarios simulados
 const USUARIOS = {
@@ -185,15 +187,15 @@ export default function Login() {
 
           <div className="social-buttons">
             <button type="button" className="social-btn google" onClick={() => handleSocial('Google')}>
-              <img src="/img/google.png" alt="Google" /> Google
+              <img src={Google} alt="Google" /> Google
             </button>
             <button type="button" className="social-btn facebook" onClick={() => handleSocial('Facebook')}>
-              <img src="/img/Apple.png" alt="Facebook" /> Facebook
+              <img src={Facebook} alt="Facebook" /> Facebook
             </button>
           </div>
 
           <footer className="register">
-            <p>¿Aún no tienes cuenta? <a href="/registro">Regístrate Gratis</a></p>
+            <p>¿Aún no tienes cuenta? <Link href="/registro">Regístrate Gratis</Link></p>
           </footer>
 
         </section>

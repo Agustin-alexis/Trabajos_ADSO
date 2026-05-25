@@ -1,4 +1,4 @@
-.login-page {
+.recover-page {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0B1023 0%, #111A3A 50%, #050814 100%);
   color: white;
@@ -48,13 +48,16 @@
   max-width: 420px;
   box-shadow: 0 15px 40px rgba(0,0,0,.3);
   animation: fadeIn .6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .login-container h1 {
   text-align: center;
   margin-bottom: 8px;
   color: #0d6efd;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .subtitle {
@@ -62,6 +65,7 @@
   margin-bottom: 25px;
   color: #aaa;
   font-size: 14px;
+  line-height: 1.5;
 }
 
 /* ── Form ── */
@@ -69,19 +73,16 @@
   margin-bottom: 18px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  gap: 6px;
 }
 
 .form-group label {
-  margin-bottom: 6px;
   font-weight: 500;
   font-size: 14px;
   color: #e2e8f0;
 }
 
-.form-group input[type="email"],
-.form-group input[type="password"],
-.form-group input[type="text"] {
+.form-group input[type="email"] {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
@@ -107,76 +108,10 @@
 .field-error-msg {
   color: #ef4444;
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
-/* ── Password container ── */
-.password-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.password-container input {
-  padding-right: 46px;
-}
-
-.toggle-pass {
-  position: absolute;
-  right: 12px;
-  top: 13px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #aaa;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  transition: color .2s;
-}
-
-.password-container.has-error .toggle-pass {
-  top: 13px;
-}
-
-.toggle-pass:hover { color: #fff; }
-
-/* Ocultar iconos nativos del navegador */
-input[type="password"]::-ms-reveal,
-input[type="password"]::-ms-clear { display: none; }
-input[type="password"]::-webkit-contacts-auto-fill-button,
-input[type="password"]::-webkit-credentials-auto-fill-button { visibility: hidden; }
-
-/* ── Opciones ── */
-.options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 13px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.remember {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  font-size: 13px;
-}
-
-.remember input { accent-color: #0d6efd; }
-
-.forgot-password {
-  color: #0d6efd;
-  text-decoration: none;
-  font-size: 13px;
-}
-.forgot-password:hover { text-decoration: underline; }
-
-/* ── Botón login ── */
+/* ── Botón ── */
 .btn-login {
   width: 100%;
   padding: 14px;
@@ -190,75 +125,72 @@ input[type="password"]::-webkit-credentials-auto-fill-button { visibility: hidde
   font-family: inherit;
   letter-spacing: .03em;
   transition: transform .3s, box-shadow .3s, opacity .3s;
+  margin-bottom: 6px;
 }
+
 .btn-login:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(13,110,253,.4);
 }
+
 .btn-login:disabled { opacity: .7; cursor: not-allowed; }
 
-/* ── Divider ── */
-.divider {
-  text-align: center;
-  margin: 25px 0;
-  font-size: 12px;
-  color: #aaa;
-  position: relative;
-}
-.divider::before,
-.divider::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 28%;
-  height: 1px;
-  background: #333;
-}
-.divider::before { left: 0; }
-.divider::after  { right: 0; }
-
-/* ── Social ── */
-.social-buttons {
+/* ── Estado enviado ── */
+.sent-state {
   display: flex;
-  gap: 12px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  padding: 10px 0 20px;
 }
 
-.social-btn {
+.sent-state__icon {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: rgba(34,197,94,.15);
+  border: 2px solid rgba(34,197,94,.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 11px 20px;
-  border-radius: 10px;
-  border: 1px solid #333;
-  background: white;
-  color: black;
-  font-weight: 500;
-  font-size: 13px;
-  cursor: pointer;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  flex: 1;
-  transition: background .2s, transform .2s;
+  font-size: 2rem;
+  color: #22c55e;
 }
-.social-btn img { width: 18px; height: 18px; object-fit: contain; }
-.social-btn:hover { background: #1a2340; transform: translateY(-2px); }
 
-/* ── Register ── */
+.sent-state__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sent-state__msg {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.sent-state__msg strong { color: #e2e8f0; }
+
+/* ── Footer ── */
 .register {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
   color: #aaa;
 }
-.register a { color: #0d6efd; text-decoration: none; font-weight: 500; }
+
+.register a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .register a:hover { text-decoration: underline; }
 
 /* ── Toast ── */
 .toast {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 24px; right: 24px;
   background: #1a2235;
   color: #e2e8f0;
   border: 1px solid #22c55e;
@@ -286,5 +218,4 @@ input[type="password"]::-webkit-credentials-auto-fill-button { visibility: hidde
 /* ── Responsive ── */
 @media (max-width: 480px) {
   .login-container { padding: 25px; }
-  .social-buttons  { flex-direction: column; }
 }
