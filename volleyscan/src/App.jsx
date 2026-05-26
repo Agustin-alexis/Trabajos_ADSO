@@ -12,6 +12,7 @@ import Configuracion from './pages/panel_usuario/Configuración'
 import Home from './pages/Home'
 import Login from './pages/login/Login'
 import Recuperacion from './assets/Auth/Recuperacion/Recuperacion'
+import Registro from './assets/Auth/Registro/Registro'
 
 
 
@@ -26,6 +27,8 @@ export default function App() {
           <Route path="/login"         element={<Login />} />
           <Route path="/login"         element={<Login />} />
           <Route path="/recuperacion"         element={<Recuperacion />} />
+          <Route path="/registro"         element={<Registro />} />
+
 
           
 

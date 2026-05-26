@@ -17,6 +17,11 @@
   margin-bottom: 20px;
 }
 
+img{
+  width: 50px;
+  border-radius: 10px;
+}
+
 .logo {
   display: flex;
   align-items: center;

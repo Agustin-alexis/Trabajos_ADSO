@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../Recuperacion/Recuperacion.css'
+import Logo from '../../img/Logo.Vs.jpg'
 
 export default function Recuperacion() {
   const [email,   setEmail]   = useState('')
@@ -49,7 +50,7 @@ export default function Recuperacion() {
       {/* Header */}
       <header className="login-header">
         <div className="logo">
-          <span className="logo-box">VS</span>
+          <img src={Logo} alt="Logo" />
           <h2>VolleyScan</h2>
         </div>
       </header>

@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import '../../styles/inicio_sesion.css'
 import Google from '../../assets/img/google.png'
 import Facebook from '../../assets/img/facebook.png'
+import Logo from '../../assets/img/Logo.Vs.jpg'
 
 // Usuarios simulados
 const USUARIOS = {
@@ -109,7 +110,7 @@ export default function Login() {
 
       <header className="login-header">
         <div className="logo">
-          <span className="logo-box">VS</span>
+          <Link to="/"> <img src={Logo} alt="Logo" /> </Link>
           <h2>VolleyScan</h2>
         </div>
       </header>
@@ -195,7 +196,7 @@ export default function Login() {
           </div>
 
           <footer className="register">
-            <p>¿Aún no tienes cuenta? <Link href="/registro">Regístrate Gratis</Link></p>
+            <p>¿Aún no tienes cuenta? <Link to="/registro">Regístrate Gratis</Link></p>
           </footer>
 
         </section>
