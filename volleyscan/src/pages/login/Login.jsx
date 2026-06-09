@@ -17,7 +17,7 @@ const USUARIOS = {
     password: 'coach123',
     rol:      'entrenador',
     nombre:   'Coach Rivera',
-    destino:  '/dashboard-entrenador',
+    destino:  '/entrenador',
   },
 }
 

@@ -6,13 +6,13 @@
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
   z-index: 30;
 }
 
 .sidebar::after {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -20,6 +20,7 @@
   background: linear-gradient(180deg, transparent, var(--accent-blue), transparent);
   opacity: 0.3;
 }
+
 
 /* Logo */
 .sb-logo {

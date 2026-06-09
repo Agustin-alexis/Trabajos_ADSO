@@ -109,7 +109,7 @@ const Seguridad = ({ setShowModal }) => {
           <div className="input-pass-wrap">
 
             <input
-              className="field-input"
+              className="field-input-1"
               type={
                 showActual
                   ? "text"
@@ -153,7 +153,7 @@ const Seguridad = ({ setShowModal }) => {
           <div className="input-pass-wrap">
 
             <input
-              className="field-input"
+              className="field-input-1"
               type={
                 showNueva
                   ? "text"
@@ -244,7 +244,7 @@ const Seguridad = ({ setShowModal }) => {
           <div className="input-pass-wrap">
 
             <input
-              className="field-input"
+              className="field-input-1"
               type={
                 showConfirm
                   ? "text"

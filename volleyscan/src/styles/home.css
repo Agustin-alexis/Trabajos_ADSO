@@ -121,9 +121,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 48px;
-  padding: 100px 48px 80px;
-  max-width: 1200px;
+  padding: 100px 48px;
+  
   margin: 0 auto;
+;
 }
 
 .hero-text { flex: 1; }
@@ -176,7 +177,6 @@
 /* ── Results ── */
 .results {
   padding: 80px 48px;
-  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -230,7 +230,6 @@
 /* ── Tech ── */
 .tech {
   padding: 80px 48px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -265,7 +264,6 @@
 /* ── Pricing ── */
 .pricing {
   padding: 80px 48px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -351,7 +349,6 @@
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 40px;
   padding: 60px 48px 40px;
-  max-width: 1200px;
   margin: 0 auto;
   border-top: 1px solid rgba(255,255,255,.06);
 }
