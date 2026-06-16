@@ -35,7 +35,7 @@ const SEED = [
   {id:uid(),name:'Regeneración Post-Partido',athlete:'Carlos Ruiz',type:'Recuperación',hour:'07:00',dur:'30 min',intensity:3,exs:['Foam roller'],notes:'',date:daysAgo(2),done:true},
 ];
 
-export default function Rutinas() {
+export default function Rutinasentrenador() {
   const [routines, setRoutines] = useState(SEED);
   const [form, setForm] = useState({athlete:'',type:'',name:'',hour:'08',min:'00',intensity:6,notes:''});
   const [selectedExs, setSelectedExs] = useState([]);

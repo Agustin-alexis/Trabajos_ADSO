@@ -20,7 +20,9 @@ import Horario from './pages/panel_entrenador/Horario'
 import Estadisticas from './pages/panel_entrenador/Estadisticas'
 import Reportes from './pages/panel_entrenador/Reportes'
 import PerfilEntrenador from './pages/panel_entrenador/Perfil'
-
+import Analisisentrenador from './pages/panel_entrenador/Analisis'
+import Rutinasentrenador from './pages/panel_entrenador/Rutinas'
+import Configuracionentrenador from './pages/panel_entrenador/Configuracion'
 export default function App() {
   return (
     <BrowserRouter>
@@ -52,10 +54,10 @@ export default function App() {
             <Route path='gestion' element={<Gestion />} />
             <Route path='horario' element={<Horario />} />
             <Route path='estadisticas' element={<Estadisticas />} />
-            <Route path='rutinas' element={<Rutinas />} />
+            <Route path='rutinas' element={<Rutinasentrenador />} />
             <Route path='reportes' element={<Reportes />} />
-            <Route path='analisis' element={<Analisis />} />
-            <Route path='configuracion' element={<Configuracion />} />
+            <Route path='analisis' element={<Analisisentrenador />} />
+            <Route path='configuracion' element={<Configuracionentrenador />} />
           </Route>
 
         </Routes>

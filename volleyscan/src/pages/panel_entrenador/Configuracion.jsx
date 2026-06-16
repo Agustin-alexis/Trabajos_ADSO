@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Configuracion.css';
-
+import '../panel_entrenador/Configuracionentrenador.css'
 const THEMES = [
   { id: 'dark', name: 'Oscuro', colors: ['#0d0f1a', '#131629', '#7c5cfc'] },
   { id: 'amoled', name: 'AMOLED', colors: ['#000000', '#0a0a0a', '#7c5cfc'] },
@@ -20,7 +19,7 @@ const NOTIF_TYPES = [
   'Actualizaciones del sistema', 'Consejos de entrenamiento semanales',
 ];
 
-export default function Configuracion() {
+export default function Configuracionentrenador() {
   const [section, setSection] = useState('General');
   const [dirty, setDirty] = useState(false);
   const [toasts, setToasts] = useState([]);

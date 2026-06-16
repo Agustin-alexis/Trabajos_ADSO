@@ -26,7 +26,7 @@ function renderMd(text) {
     .replace(/\n/g, '<br/>');
 }
 
-export default function Analisis() {
+export default function Analisisentrenador() {
   const [messages, setMessages] = useState([{ role: 'ai', text: WELCOME, time: 'Ahora' }]);
   const [input, setInput] = useState('');
   const [typing, setTyping] = useState(false);
