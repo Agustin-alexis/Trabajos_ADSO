@@ -31,12 +31,7 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    overflow-x: hidden;
-}
+
 
 /* ============================================ */
 /* SIDEBAR ESTILOS - REUTILIZABLE              */

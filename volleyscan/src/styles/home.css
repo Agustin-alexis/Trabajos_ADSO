@@ -3,7 +3,7 @@
    Landing page
    ============================================= */
 
-.home-page {
+.home-page1 {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0b0f1a 0%, #111a3a 50%, #050814 100%);
   color: #e2e8f0;
@@ -13,7 +13,7 @@
 }
 
 /* ── Cursor ── */
-.cursor-core {
+.cursor-core1 {
   position: fixed;
   width: 10px; height: 10px;
   background: gold;
@@ -24,7 +24,7 @@
   transition: background .2s;
 }
 
-.cursor-aura {
+.cursor-aura1 {
   position: fixed;
   width: 120px; height: 120px;
   border: 1.5px solid rgba(255,215,0,.25);
@@ -35,7 +35,7 @@
 }
 
 /* ── Navbar ── */
-.topbar {
+.topbar1 {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -48,7 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 48px;
+  padding: 14px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;

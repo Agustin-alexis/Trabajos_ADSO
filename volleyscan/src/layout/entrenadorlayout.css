@@ -1,0 +1,24 @@
+.layout {
+  min-height: 100vh;
+}
+
+/* Sidebar fija */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 230px;
+  height: 100vh;
+
+  overflow-y: auto;
+  z-index: 100;
+}
+
+/* Contenido */
+.main-content-2 {
+  margin-left: 230px;
+  min-height: 100vh;
+  width: calc(100% - 230px);
+  padding: 24px;
+}

@@ -184,14 +184,14 @@ export default function Home() {
   }
 
   return (
-    <div className="home-page">
+    <div className="home-page1">
 
       {/* Cursor */}
-      <span ref={cursorCoreRef} className="cursor-core" aria-hidden="true" />
-      <span ref={cursorAuraRef} className="cursor-aura" aria-hidden="true" />
+      <span ref={cursorCoreRef} className="cursor-core1" aria-hidden="true" />
+      <span ref={cursorAuraRef} className="cursor-aura1" aria-hidden="true" />
 
       {/* ── NAVBAR ── */}
-      <header className="topbar">
+      <header className="topbar1">
         <nav className="navigation">
           <Link className="brand" to="/">
             <img src={Logo} alt="Logo VolleyScan" className="logo-1" />
@@ -237,7 +237,7 @@ export default function Home() {
         </section>
 
         {/* ── RESULTADOS ── */}
-        <section className="results" id="metricas" ref={resultsSectionRef}>
+        <section className="results-1" id="metricas" ref={resultsSectionRef}>
           <article className="results-header reveal">
             <h1>Resultados que <span onMouseEnter={handleScramble}>Hablan</span></h1>
             <p className="subtitle">

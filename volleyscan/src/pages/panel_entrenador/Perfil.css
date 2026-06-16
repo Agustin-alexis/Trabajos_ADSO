@@ -31,13 +31,6 @@
   --transition:   0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Sora', sans-serif;
-  background: var(--bg-deep);
-  color: var(--text-1);
-  overflow: hidden;
-}
 
 .app { 
   display: flex; 

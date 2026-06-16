@@ -37,13 +37,6 @@
   --shadow:   0 4px 24px rgba(0,0,0,.5);
 }
 
-body { 
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-body);
-  height: 100vh;
-  overflow: hidden;
-}
 
 /* ═══════════════════════════════════════
    SIDEBAR

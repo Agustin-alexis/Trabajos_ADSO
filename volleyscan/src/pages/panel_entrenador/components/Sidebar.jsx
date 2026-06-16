@@ -1,36 +1,40 @@
 import { NavLink } from 'react-router-dom';
 import '../components/Sidebar.css';
+import Logo from '../../../assets/img/Logo.VS.jpg'
 
 const nav = [
   {
-    group: 'Principal', items: [
-      { to: '/dashboard', icon: 'fa-house', label: 'Dashboard' },
-      { to: '/perfil', icon: 'fa-user', label: 'Perfil' },
-      { to: '/gestion', icon: 'fa-people-group', label: 'Deportistas' },
-      { to: '/horario', icon: 'fa-calendar-days', label: 'Horario' },
+    group: 'Principal',
+    items: [
+      { to: '/entrenador', icon: 'fa-house', label: 'Dashboard' },
+      { to: '/entrenador/perfil', icon: 'fa-user', label: 'Perfil' },
+      { to: '/entrenador/gestion', icon: 'fa-people-group', label: 'Deportistas' },
+      { to: '/entrenador/horario', icon: 'fa-calendar-days', label: 'Horario' },
     ]
   },
   {
-    group: 'Análisis', items: [
-      { to: '/estadisticas', icon: 'fa-chart-bar', label: 'Estadísticas' },
-      { to: '/rutinas', icon: 'fa-dumbbell', label: 'Rutinas' },
-      { to: '/reportes', icon: 'fa-file-lines', label: 'Reportes' },
-      { to: '/analisis', icon: 'fa-microchip', label: 'Análisis IA' },
+    group: 'Análisis',
+    items: [
+      { to: '/entrenador/estadisticas', icon: 'fa-chart-bar', label: 'Estadísticas' },
+      { to: '/entrenador/rutinas', icon: 'fa-dumbbell', label: 'Rutinas' },
+      { to: '/entrenador/reportes', icon: 'fa-file-lines', label: 'Reportes' },
+      { to: '/entrenador/analisis', icon: 'fa-microchip', label: 'Análisis IA' },
     ]
   },
   {
-    group: 'Sistema', items: [
-      { to: '/configuracion', icon: 'fa-gear', label: 'Configuración' },
+    group: 'Sistema',
+    items: [
+      { to: '/entrenador/configuracion', icon: 'fa-gear', label: 'Configuración' },
     ]
   },
 ];
 
-export default function Sidebar() {
+export default function SidebarEntrenador() {
   return (
-    <aside className="sidebar">
+    <aside className="sidebar-1">
       <div className="sb-logo">
-        <img src="Vollei.jpeg" alt="VolleyAI" className="sb-logo-icon" style={{ width: '42px', height: '42px', borderRadius: '12px', objectFit: 'cover' }} /><div>
-          <div className="sb-logo-name">VolleyAI</div>
+        <img src={Logo} alt="VolleyAI" className="sb-logo-icon" style={{ width: '42px', height: '42px', borderRadius: '12px', objectFit: 'cover' }} /><div>
+          <div className="sb-logo-name">VolleyScan</div>
           <div className="sb-logo-role">Entrenador</div>
         </div>
       </div>

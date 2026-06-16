@@ -106,7 +106,7 @@ export default function Login() {
   const toastColors = { success: '#22c55e', error: '#ef4444', info: '#3b82f6' }
 
   return (
-    <div className="login-page">
+    <div className="login-page1">
 
       <header className="login-header">
         <div className="logo">

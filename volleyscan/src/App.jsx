@@ -19,6 +19,7 @@ import Gestion from './pages/panel_entrenador/Gestion'
 import Horario from './pages/panel_entrenador/Horario'
 import Estadisticas from './pages/panel_entrenador/Estadisticas'
 import Reportes from './pages/panel_entrenador/Reportes'
+import PerfilEntrenador from './pages/panel_entrenador/Perfil'
 
 export default function App() {
   return (
@@ -47,7 +48,7 @@ export default function App() {
           {/* Panel entrenador */}
           <Route path='/entrenador' element={<EntrenadorLayout />}>
             <Route index element={<DashboardEntrenador />} />
-            <Route path='perfil' element={<Perfil />} />
+            <Route path='perfil' element={<PerfilEntrenador />} />
             <Route path='gestion' element={<Gestion />} />
             <Route path='horario' element={<Horario />} />
             <Route path='estadisticas' element={<Estadisticas />} />

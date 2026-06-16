@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Perfil.css';
+import '../panel_entrenador/Perfil.css';
 
 const DEFAULT_ACHIEVEMENTS = [
   { id: 1, icon: '🏆', title: 'Mejor entrenador', description: 'Torneo Regional 2024' },
@@ -13,7 +13,7 @@ const DEFAULT_PROFILE = {
   experience: '5', level: 'Nivel 3'
 };
 
-export default function Perfil() {
+export default function PerfilEntrenador() {
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState(DEFAULT_PROFILE);
   const [form, setForm] = useState(DEFAULT_PROFILE);
